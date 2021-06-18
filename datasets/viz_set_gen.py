@@ -69,6 +69,7 @@ if __name__ == "__main__":
                        "samples_intersection_5",
                        "samples_intersection_6",
                        "samples_intersection_7",
+                       "samples_intersection_8",
                        "samples_straight_1",
                        "samples_straight_2",
                        "samples_straight_3",
@@ -86,7 +87,9 @@ if __name__ == "__main__":
                        "samples_y_intersection_3",
                        "samples_y_intersection_4",
                        "samples_roundabout_1",
-                       "samples_roundabout_2"]
+                       "samples_roundabout_2",
+                       "samples_lane_fork",
+                       "samples_lane_merge"]
 
     extract_samples_from_sets(
         sample_dir, viz_sample_dir, all_scenes_sets)
