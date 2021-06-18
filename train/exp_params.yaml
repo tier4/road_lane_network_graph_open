@@ -1,0 +1,28 @@
+hyperparams:
+  init_learning_rate: 1e-3
+  final_learning_rate: 1e-5
+  final_learning_rate_step: 180000
+  base_channels: 64
+  dropout_prob: 0.0
+
+training_params:
+  iter_max: 300000000
+  print_interval: 100
+  checkpoint_interval: 5000
+  batch_size: 8 #28
+  num_workers: 8 #12
+  device: "cuda"
+  pregen: True
+  do_checkpoint: True
+  do_eval: True
+  do_viz: True
+
+paths:
+  train_set: "datasets/training_samples_pregen/"
+  val_set_1: "datasets/training_eval"
+  val_set_2: "datasets/test_eval"
+  viz_set: "datasets/viz_samples"
+  checkpoint_savedir: "exp_1/"
+  viz_savedir: "exp_1/"
+  logfile_savedir: "exp_1/"
+  load_checkpoint:  # None or path
