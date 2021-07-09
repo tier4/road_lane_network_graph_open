@@ -9,15 +9,9 @@ def create_pregen_sample_dic(sample_tensor):
 def unpack_pregen_sample_dic(sample_dic):
     '''Generates a sample tensor from a pregenerated sample dictionary.
     '''
-    input_tensor = sample_dic["input_tensor"]
+    input_tensor = sample_dic["input_tensor"][0]
     label_tensor = sample_dic["label_tensor"]
 
-    # NOTE: Convert Gaussian --> binary manuver label
-    #man_label = label_tensor[-1]
-    #mask = (man_label > 0.8)
-    #zeros = torch.zeros(man_label.shape)
-    #man_label = torch.where(mask, torch.tensor(1.0), zeros)
-    #label_tensor[-1] = man_label
 
     # Cast float16 --> float32
     input_tensor = input_tensor.to(torch.float32)

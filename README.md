@@ -7,18 +7,22 @@ This repository contain code to reproduce results in the paper "Learning a Model
 Python3
   - version: 3.6
   - packages:
-    - FILL IN (pipreqs --> requirements.txt)
-
-pip install -r requirements.txt
-
-Ref:  https://stackoverflow.com/questions/46419607/how-to-automatically-install-required-packages-from-a-python-script-as-necessary/46419642
+    - scipy==1.5.2
+    - numpy==1.19.1
+    - matplotlib==3.3.4
+    - torch==1.9.0
+    - opencv_python==4.5.2.54
+    - PyYAML==5.4.1
 
 ### TL;DR
 ```
 # Set up environment and go to repository directy root
 
 cd <path>/road_lane_network_graph_open/
+
 export PYTHONPATH=.
+
+pip install -r requirements.txt
 
 # 1. Create examples (manual labor)
 

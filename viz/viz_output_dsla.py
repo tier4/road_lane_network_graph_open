@@ -1,19 +1,20 @@
+import os
+
+import cv2
+import matplotlib.pyplot as plt
 import numpy as np
 import torch
-import cv2
-import os
-import matplotlib.pyplot as plt
-
+from dataloader.dataloader_aux import unpack_minibatch
+from graph.graph_func import comp_graph
 from inference.inference import dsla_inference
 from models.unet_dsla import get_dsla_output_layers
-from dataloader.dataloader_aux import unpack_minibatch
+
 from viz.viz_dense import visualize_dense
-from graph.graph_func import comp_graph
 
 
 def visualize_output_dsla(
         dataset, model_dsla, device, iter_idx, output_path, interactive=False, 
-        graph=False, graph_scale=2.):
+        graph=False, graph_scale=1.):
     '''
     TODO: Figure out why the graph was originally scaled 2 during trainig viz.
     '''
