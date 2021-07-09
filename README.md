@@ -1,6 +1,8 @@
 # Road Lane Network Graph Open
 This repository contain code to reproduce results in the paper "Learning a Model for Inferring a Spatial Road Lane Network Graph using Self-Supervision" to be published at ITSC 2021.
 
+Paper link: [Learning a Model for Inferring a Spatial Road Lane Network Graph using Self-Supervision](https://arxiv.org/abs/2107.01784)
+
 ![Promotional header image](img/header.png)
 
 ### Dependencies
