@@ -3,7 +3,7 @@ This repository contain code to reproduce results in the paper "Learning a Model
 
 Paper link: [Learning a Model for Inferring a Spatial Road Lane Network Graph using Self-Supervision](https://arxiv.org/abs/2107.01784)
 
-Video presentation link:
+Video presentation link: [YouTube video](https://youtu.be/MR0k4Udo4zc)
 
 Shared public data (incl. pretrained models): [Google Drive directory](https://drive.google.com/drive/u/1/folders/1Z22QCs1fTQTDYhM-qOqR1jrg5Zc0D6Hc)
 
